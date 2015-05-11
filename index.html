@@ -2929,7 +2929,7 @@ border-top-left-radius: 100%; padding:7px 7px 0 7px"><span class="icon-search-gl
               <p></p>
           </header>
 
-<button class="btn btn-blue-pill" data-toggle="modal" data-target="#LgModal">
+<button class="btn btn-blue-pill" data-toggle="modal" data-target="#signupModal">
  Sign Up
 </button>
 <button class="btn btn-blue-pill" data-toggle="modal" data-target="#SmModal">
@@ -2960,90 +2960,97 @@ border-top-left-radius: 100%; padding:7px 7px 0 7px"><span class="icon-search-gl
   </div>
 </div>
 
-<div class="modal fade" id="LgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-900">
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-850">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cancel</span></button>
         <h1 class="modal-title" id="myModalLabel">Sign Up</h1>
       </div>
       <div class="modal-body">
-      <p>Lorem ipsum text here Lorem ipsum text here.Lorem ipsum text here Lorem ipsum Lorem ipsum text here Lorem ipsum text here.Lorem ipsum text here Lorem ipsum Lorem ipsum text here Lorem ipsum text here. 
+      <p>Just Sign Up today and we will customize our website based on your personal preferences. Searching for the perfect vacation will be easier than ever before! 
 </p>
 <br/>
-<div class="col-sm-6">
-<form>
-	<h4 class="sectionHeading">Sign Up Below</h4>
+<div class="row" style="margin-bottom:24px;">
+<div class="col-sm-7">
+<form role="form" class="form-horizontal">
+		<div style="border-right:1px solid #eee;">
+    <h4 class="sectionHeading">Sign Up Below.</h4>
+	
+        <div class="form-group">
+    		<label style="padding-top:24px" for="firstName" class="col-sm-4 control-label">First Name:*</label>
+    			<div style="padding-right:20px;" class="col-sm-8">
+    			<span style="color:#555;">*Required Fields</span>
+                    <input type="text" class="form-control" id="" data-bv-notempty-message="The first name is required" data-bv-notempty="true" placeholder="" name="firstName" data-bv-field="firstName">
+    			</div>
+  		</div>
+  
 		<div class="form-group">
-  	<label class="control-label col-sm-4" for="">First Name:*</label>
-   			<div style="padding-right:0;" class="col-sm-8">
-        		<span style="color:#555;">*Required Fields</span>
-   				<input type="text" placeholder="first name" id="" class="form-control">
-        	</div>
-        </div>
-		<div class="form-group">
-  	<label class="control-label col-sm-4" for="">Last Name:*</label>
-   			<div style="padding-right:0;" class="col-sm-8">
-   				<input type="text" placeholder="last name" id="" class="form-control">
-        	</div>
+  			<label class="control-label col-sm-4" for="lastName">Last Name:*</label>
+   				<div style="padding-right:20px;" class="col-sm-8">
+   					<input type="text" data-bv-notempty-message="The last name is required" data-bv-notempty="true" placeholder="" name="lastName" class="form-control" data-bv-field="lastName">
+        		</div>
         </div>
         <div class="form-group">
-  	<label class="control-label col-sm-4" for="">Email:*</label>
-   			<div style="padding-right:0;" class="col-sm-8">
-   				<input type="text" placeholder="email" id="" class="form-control">
-        	</div>
+  			<label class="control-label col-sm-4" for="email">Email:*</label>
+   				<div style="padding-right:20px;" class="col-sm-8">
+   					<input type="email" data-bv-emailaddress-message="The input is not a valid email address" data-bv-emailaddress="true" placeholder="" name="email" class="form-control" data-bv-field="email">
+        		</div>
         </div>
         <div class="form-group">
-  	<label class="control-label col-sm-4" for="">Preferred Departure Airport:*</label>
-   			<div id="the-basics1" style="width:185px"  class="col-sm-8">
-				<input type="text" placeholder="" class="typeahead form-control">
-			</div> 
+  			<label style="padding-top:0;" class="control-label col-sm-4" for="">Preferred Departure Airport:*</label>
+   				<div style="padding-right:20px;" id="the-basics1" class="col-sm-8">
+					<input style="width:283px;" type="text" class="typeahead form-control" placeholder="">
+				</div> 
         </div>
         <div class="form-group">
-  	<label class="control-label col-sm-4" for="">Password:*</label>
-   			<div style="padding-right:0;" class="col-sm-8">
-   				<input type="text" placeholder="password" id="" class="form-control">
-                <span>Alpha numeric and min 8 characters</span>
-        	</div>
+  			<label class="control-label col-sm-4" for="">Password:*</label>
+   				<div style="padding-right:20px;" class="col-sm-8">
+   					<input type="text" class="form-control" id="" placeholder="" >
+                	<span style="font-size:11px; color:#555;" class="pull-right">Alpha numeric and min 8 characters</span>	
+        		</div>
         </div>
         <div class="form-group">
-  	<label class="control-label col-sm-4" for="">Confirm Password:*</label>
-   			<div style="padding-right:0;" class="col-sm-8">
-   				<input type="text" placeholder="confirm password" id="" class="form-control">
-                <span>Alpha numeric and min 8 characters</span>
-        	</div>
+  			<label class="control-label col-sm-4" for="">Confirm Password:*</label>
+   				<div style="padding-right:20px;" class="col-sm-8">
+   					<input type="text" class="form-control" id="" placeholder="">
+                		
+        		</div>
         </div>
         
-        <div class="checkbox col-sm-push-4">
-            <label>
-              <input type="checkbox"> Show password
+        <div style="padding-left:10px" class="checkbox col-sm-push-3">
+            <label style="text-align:left">
+              <input type="checkbox"> Yes, I would like to receive special offers!
             </label>
         </div>
-         <div class="col-sm-6"><p>We care about your privacy. <a href="#0">Read our privacy policy</a></p></div>
-          <div class="col-sm-6"><a style="pull-right" href="#" class="btn btn-blue-medium">Sign Up</a></div>
+        
+        <br/>
+        </div>
+          <br/>
+         <div style="float:left;width:300px;"><p>We care about your privacy.<br><a href="#0">Read our privacy policy</a></p></div>
+          <div class="pull-right"><a style="margin-right:24px" href="#" class="btn btn-blue-pill-large">Sign Up</a></div>
           <div class="clearfix"></div>
 </form>
 </div>
-<div class="col-sm-6" style="border-left:1px solid #eee;">
-	<h4 class="sectionHeading">Why Should I Sign Up.</h4>
-    <p>Lorem ipsum text here Lorem ipsum text here.Lorem ipsum text here Lorem ipsum Lorem ipsum text here Lorem ipsum text here.Lorem ipsum text here Lorem ipsum Lorem ipsum text here Lorem ipsum text here. </p>
-    <img src="" width="" height="" />
-    <p>Lorem ipsum text here Lorem ipsum text here.Lorem ipsum text here Lorem ipsum Lorem ipsum text here Lorem ipsum text here.Lorem ipsum text here Lorem ipsum Lorem ipsum text here Lorem ipsum text here. </p>
-    <ul>
-    <li>Lorem ipsum text here</li>
-    <li>Lorem ipsum text here</li>
-    <li>Lorem ipsum text here</li>
-    <li>Lorem ipsum text here</li>
-    <li>Lorem ipsum text here</li>
-    <li>Lorem ipsum text here</li>
+<div class="col-sm-5" style="padding-left:8px;padding-right:8px;">
+	<h4 class="sectionHeading">Why Should I Sign Up?</h4>
+    <p>Sign up and enjoy access to a number of benefits, including:  </p>
+    <br/>
+    <img src="http://www.applevacations.com/kate/newAVsite/styleGuide/images/whySignUp.jpg" width="323" height="140" alt="sign up at Apple Vacations" />
+ 	<br/>
+    <ul style="margin-top:20px;">
+    <li>Entry to win a free vacation</li>
+    <li>Exclusive deals and savings</li>
+    <li>Personal Travel Preferences</li>
+    <li>A customized online experience tailored for you</li>
+    <li>All the benefits of signing up <a href="#0">Learn More</a></li>
     </ul>
+</div>
 </div>
 <div class="clearfix"></div>
 
       </div>
-      <div class="modal-footer">
-
-      </div>
+    
     </div>
   </div>
 </div>
